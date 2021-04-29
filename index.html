@@ -1,0 +1,618 @@
+<!doctype HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>運スタの日常を覗いてみよう！</title>
+        <meta name="description" content="運スタの日常についてご紹介します！">
+        <link rel="icon" type="png" href="logo.png">
+    </head>
+
+    <body>
+      <header>
+  
+        <div class="logo1">
+            <a href=" https://wasedasai2021shinkan.github.io/toppage/" id="headerlogo"><img src="headericon.png" class="hedlogo">
+            </a>
+        </div>
+  
+        <div id="hamburger">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+  
+        <nav class="sm navi">
+          <ul class="lists">
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/daihyouaisatsu/">代表挨拶</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/about/">早稲田祭について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/event/">新歓イベント</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/katsudounitsuite/">活動について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/rensai/">連載記事</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/schedule/
+          ">年間スケジュール</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/photogallery/">フォトギャラリー</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/nyukai/">入会方法</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/otoiawase/">お問い合わせ</a></li>
+         </ul>
+        </nav>
+  
+
+  
+        <nav class="pc navi">  
+          <ul class="lists">
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/daihyouaisatsu/">代表挨拶</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/about/">早稲田祭について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/katsudounitsuite/">活動について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/photogallery/">フォトギャラリー</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/otoiawase/">お問い合わせ</a></li>
+          </ul>
+        </nav>
+ 
+  
+      </header>
+  
+  
+
+      <script src="jquery-3.6.0.min.js"></script>
+        <script>
+          $('#hamburger').on('click', function(){
+          $('.icon').toggleClass('close');
+          $('.sm').slideToggle();
+          });
+    
+        </script>
+
+<style>
+/*header*/
+
+header {
+height: 60px;
+width: 100%;
+padding: 0px 0px;
+background-color:#78c1cd;
+position: fixed;
+top: 0;
+z-index: 10;
+display: flex;
+font-family:serif;
+}
+
+
+.lili:hover{
+filter: alpha(opacity=85);
+-moz-opacity: 0.85;
+opacity: 0.85;
+
+}
+
+.logo1 {
+font-size: 25px;}
+
+.hedlogo{
+height:55px;
+width:55px;
+margin-left:12px;
+}
+
+
+.hedlogo:hover  {
+filter: alpha(opacity=85);
+-moz-opacity: 0.85;
+opacity: 0.85;
+
+}
+.navi{
+margin: 0 0 0 auto;
+}
+
+.lists {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+margin-right:15px
+}
+
+.listwords {
+color: #eaf4fc;
+text-decoration: none;
+display: block;
+line-height: 60px;
+padding: 0 20px;
+}
+
+.sm {
+display: none;
+}
+.toppagelogo{
+height:500px;
+width:500px:
+padding:400px;
+margin:0 auto;
+}
+/*---------------------------------------------------------------*/
+@media (max-width: 900px) {
+
+.pc {
+  display: none;
+}
+
+#hamburger {
+  background-color: transparent;
+  position:relative;
+  float:right
+  cursor:pointer;
+  margin: 0 0 0 auto;
+  height: 60px;
+  width: 60px;
+}
+
+.icon span {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 4px;
+  background-color:#eaf4fc;
+  border-radius: 8px;
+  transition: ease 0.75s;
+}
+
+.icon span:nth-of-type(1) {
+  top: 16px;
+}
+.icon span:nth-of-type(2) {
+  top: 28px;
+}
+.icon span:nth-of-type(3) {
+  bottom: 16px;
+}
+
+.close span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 28px;
+}
+
+.close span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.close span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+}
+
+.sm {
+    top: 60px;
+    left: 0px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: #78c1cd;
+    
+
+}
+
+.lists {
+  flex-direction: column;
+}
+
+.listwords {
+  text-align: center; 
+  border-top: solid 0.5px #eaf4fc;
+}
+
+
+.list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+</style>
+
+        
+        
+        
+<body>
+<!-- コンテンツ -->
+<div class="content">
+  <div class="title">
+      <img src="title.png" alt="title">
+  </div>
+  <div class="text">
+    <div class="article-title">
+      <h1>運スタの日常を覗いてみよう！</h1>
+    </div>
+   
+    <h2>目次</h2>
+    <p class="table">1.1日のスケジュール～文系～</br>
+                2.1日のスケジュール～理系～</br>
+                3.アルバイトについて</br>
+                4.かばんの中身</br>
+
+                <p class="saisho">
+                  新入生のみなさん、ご入学おめでとうございます！<br>
+                  大学生活がどのようなものか、まだ想像がつかない方も多いかもしれません。<br>
+                  そんなみなさんに向けて、今回は早稲田祭2021運営スタッフに所属している4人<br>
+                  （文化構想学部のAさん、社会科学部のBさん、先進理工学部のCさん、創造理工学部のDさん）<br>
+                  に協力していただき、1日のスケジュール・アルバイト、かばんの中身（普段の持ち物について）をお聞きしました。<br>
+                  実際に先輩たちがどのような日常を過ごしているのか、一緒に覗いてみましょう！
+</p>
+
+                <style>
+                .saisho {
+  font-size:18px;
+  font-family: serif;
+  margin-top: 30px;
+}
+                  </style>
+ 
+<h2 class="title1">1.1日のスケジュール～文系～</h2>
+       <p class="bun11">
+                  <b>・Aさん（文化構想学部）</b>
+</p>
+                <img class="bun1" src="bun1.png" alt="Asan">
+                 <style>.bun1 {
+                   width: 50%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p>空きコマを利用して、課題・オンデマンド授業を受けておくのがサークル活動と勉強を上手く両立するコツですね。
+                </p>
+                
+  <p class="bun22">
+                  <b>・Bさん（社会科学部）</b>
+</p>
+                <style>.bun22{
+                margin-top:40px;
+                  }
+                </style>
+                <img class="bun2" src="bun2.png" alt="Bsan">
+                 <style>.bun2 {
+                   width: 50%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p>動画のサブスクリプションに入会し、快適な自粛期間を送っています。
+                </p>
+                
+      <p class="bunmatome">
+                  <b>1日中授業があった高校時代と比べて、授業数がぐっと減る文系大学生。AさんとBさんは食後にゆっくりする時間を取っています。文系の大学生は暇、という噂は本当なのかも…...？）</b>
+</p>
+                <style>.bunmatome{
+                margin-top:50px;
+                  }
+                </style>
+                
+                
+                
+                
+                
+  <h2 class="title2">2.1日のスケジュール～理系～</h2>
+       <p class="ri11">
+                  <b>・Cさん（先進理工学部）</b>
+</p>
+                <img class="ri1" src="ri1.png" alt="Csan">
+                 <style>.ri1 {
+                   width: 50%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p>運スタがない日はアルバイトをしているCさん。<br>
+                  アルバイト・運スタ・授業の三拍子揃って忙しいご様子です。<br>
+                  特筆すべきは深夜までの課題！ 受験を思い出しますね(笑) 文系大学生も見習おう！
+                </p>
+                
+  <p class="ri22">
+                  <b>・Dさん（創造理工学部）</b>
+</p>
+                <style>.ri22{
+                margin-top:40px;
+                  }
+                </style>
+                <img class="ri2" src="ri2.png" alt="Dsan">
+                 <style>.ri2 {
+                   width: 50%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p>雑談Zoomは人と気軽に会えない今ならでは！
+                </p>
+                
+      <p class="rimatome">
+                  <b>理系の学部も対面授業は少なかったようですが、キャンパスで友達と課題をやったりZoomの授業に一緒に出たりしたのは楽しかったそうです！</b>
+</p>
+                <style>.rimatome{
+                margin-top:50px;
+                  }
+                </style>
+                
+                
+<h2 class="title3">3.アルバイトについて</h2>
+       <p class="baito">
+                  Aさんは飲食のホールスタッフと個別指導の塾講師、Bさんは正月の巫女さんと単発でイベント受付を行っています。<br>
+                    また、Cさんは週1で塾講師、課題に余裕のある週は土日に単発の試験監督やイベントスタッフなど、<br>
+                    Dさんは受験生時代に通っていた塾の講師を行っています。<br>
+                    <b>単発のアルバイトは自分の都合に合わせて働くことができるので、スケジュールが読みにくい大学生向き</b>だと言えます。<br>
+                    <b>様々なアルバイトがありますが、早大生には塾講師が人気のよう</b>です。<br>
+                    時給も高く、早稲田生だと採用されやすいので、アルバイトに何をするか悩んでいる新入生のみなさんは塾講師や家庭教師の求人を探してみてはいかがでしょうか。<br>
+                    アルバイトを掛け持ちしている人もとても多いので、興味を持ったアルバイトがあればぜひ挑戦してみてください！
+</p>
+                
+                
+                
+ 
+  <h2 class="title4">4.かばんの中身</h2> 
+   
+ <p class="bun11">
+                  <b>・Aさん</b>
+</p>
+                <img class="asan" src="asan.png" alt="Asan">
+                 <style>.asan{
+                   width: 100%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p><b>①モバイルバッテリー</b><br>
+
+                  スマホの充電はすぐになくなるので必須です。<br>
+                  大学にはコンセントがありとあらゆるところにあるので持っていない人は友達に借りるかコードを持参しましょう！
+
+                  <b>②筆箱</b><br>
+                  基本はパソコンで授業を受けますが、レジュメが配られる時があるので筆箱も一応持っていきましょう。 
+                </p>
+                
+  <p class="bun22">
+                  <b>・Bさん</b>
+</p>
+                <style>.bun22{
+                margin-top:40px;
+                  }
+                </style>
+                <img class="bsan" src="bsan.png" alt="Bsan">
+                 <style>.bsan {
+                   width: 100%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p><b>①単語帳</b><br>
+                  TOEIC対策をしています。ただ開く回数は少ないそうです(笑)<br>
+                  <b>②マスク</b><br>
+                 汚したときのための予備。このご時世では特に大事ですね。
+                </p>
+                
+      <p class="ri11">
+                  <b>・Cさん</b>
+</p>
+                <style>.ri11{
+                margin-top:40px;
+                  }
+                </style>
+                <img class="csan" src="csan.png" alt="Csan">
+                 <style>.csan{
+                   width: 100%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p><b>①色鉛筆</b><br>
+                    どうして色鉛筆を持ち歩くのか、疑問に思った方もいるでしょう！ 実験の記録や細胞を顕微鏡で見てスケッチするときに使うそうです。<br>
+                  <b>②CASIOの関数電卓</b><br>
+                    pHの計算や三角関数、logの計算に使う電卓です。<br>
+                  <b>③白衣</b><br>
+                    実験で服や体を守るために着ます。夏は暑いらしいです。
+                </p>
+                
+  <p class="ri22">
+                  <b>・Dさん</b>
+</p>
+                <style>.ri22{
+                margin-top:40px;
+                  }
+                </style>
+                <img class="dsan" src="dsan.png" alt="Dsan">
+                 <style>.dsan {
+                   width: 100%;
+                    text-align : center
+                  margin: auto;
+                  }
+</style>
+                <p><b>①アレルスクリーン（花粉症用スプレー）</b><br>
+                    ボックスティッシュを持ち歩いていることからも察することができるように、重度の花粉症に悩まされています。このスプレーは効くらしいので花粉症の人はぜひ。<br>
+                  <b>②瞬間接着剤</b><br>
+                    「何かあったときのため」に持ち歩いているそう。一体彼には何があるのでしょうか‥
+                </p>
+                
+     <p class="bunrimatome">
+               大学への持ち物リストには、文系の2人からは、イヤホン、財布、スケジュール帳、単語帳、定期、ティッシュ、パソコン、筆記用具、マスク、モバイルバッテリー、ハンカチ、リップがあがりました。<br>
+                  理系の2人からは、色鉛筆、関数電卓、教科書、筆記用具、白衣、マスク、パソコンがあがりました。
+ </p>
+                <p class="bunrimatome">
+              文系理系問わずやはり大学生にパソコンは欠かせないようですね！<br>
+                  課題や講義、サークルなど様々な場面で使用するので、重さやスペックなど性能を比較して、自分に合ったお気に入りの1台を持ち歩きましょう！<br>
+                  関数電卓や白衣などは理系ならではの持ち物ですね。
+ </p>
+        <style>.bunrimatome{
+                margin-top:50px;
+                  }
+                </style>
+               
+                
+              
+   <p class="matome">
+                いかがだったでしょうか。みなさんが実際に運スタに入会したときの生活は想像できましたか？<br>
+                  早稲田祭運営スタッフは、早稲田大学3大サークルの一角と言われています。<br>
+                  規模が大きく所属人数が多いので、運スタで友達をたくさん作って早稲田祭2021を一緒に盛り上げましょう～！<br><br>
+
+              運スタをもっと知りたいという人は<a href="https://wasedasai2021shinkan.github.io/event/">ここ</a>をクリック！ <br>
+              交流企画もぜひご利用ください！</p>
+   
+              
+              
+</div>
+</body>
+          
+          <style>
+            body {
+    background-color: #eaf4fc
+}
+.titlephoto {
+    width: 100%;
+    padding-top: 50px;
+}
+ 
+
+
+.content {
+  color: #17183B;
+  font-family: serif;
+}
+
+.title img {
+  width: 100%;
+}
+
+
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+.text {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #17183B;
+  margin-bottom: 30px;
+}
+.article-title {
+  text-align: center;
+  font-family: serif;
+}
+.text h1 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+
+h2 {
+    color: #17183B;
+    font-size:22px;
+    font-family: serif;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.table {
+    color: #17183B;
+    font-size:18px;
+    font-family: serif;
+}
+
+
+.title1 {
+    color: #17183B;
+    font-size:20px;
+    font-family: serif;
+    margin-top: 40px;
+}
+
+.mazuha {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.matome {
+  font-size:18px;
+  font-family: serif;
+  margin-top: 70px;
+}
+            </style>
+            
+            
+            
+            
+            
+            
+    <footer>
+
+<div class="wrapper2">
+    <p class="title">WASEDASAI OPERATION STAFF</br>SHINKAN 2021</p>
+    <div class="innerbox">
+          
+        <a href="https://twitter.com/wasedasai_new?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" > 
+            <img src="twitter.png" alt="twitter" width="80" height="80"　border="0"> 
+        </a>
+
+        <a href="https://www.instagram.com/wasedasai_new/" target="_blank" > 
+            <img src="instagram.png" alt="instagram" width="80" height="80"　border="0"> 
+        </a>
+
+        <a href="https://qr-official.line.me/sid/M/011uqnra.png" target="_blank" > 
+            <img src="line.png" alt="line" width="80" height="80"　border="0"> 
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCFh9blapIkxPf4Al3L87QHQ" target="_blank" > 
+            <img src="youtube.png" alt="youtube" width="80" height="80"　border="0"> 
+        </a>
+    </div>
+</div>
+     <div class="footerlogo">
+            <a href="https://wasedasai2021shinkan.github.io/toppage/" target="_blank" > 
+                <img src="footerlogo.png" alt="footerlogo" width="40%" height="40%"　border="0"> 
+            </a>
+        </div>
+
+
+
+    <p><small>Copyright @ WASEDASAI2021 Staff All Rights Reserved. </small></p>
+</div>
+</footer>
+
+<style>
+   footer {
+    background-color: #78c1cd;
+    text-align: center;
+    padding: 26px 0;
+    text-decoration: none;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: serif;
+}
+.wrapper2 {
+    background-color: #78c1cd;
+}
+
+
+.innerbox {
+    margin-top: 5px;
+    background-color: #78c1cd;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;/*水平方向に均等に分布(端は詰める)*/
+}
+
+.footerlogo{
+    margin-top: 5px;
+}
+
+  </style>
+					</html>
